@@ -25,11 +25,13 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
+    
+                    多層都市圏のなかで唯一、ドントリアは不気味な沈黙を保っており、惑星全体を巻き込んだ戦争の騒乱のなかで、その運命は不明のままだった。最後の連隊が全滅したと記録されて以来、広大な大陸には疫病の霧がかかっており、防衛線の維持を任された兵士の間では、感染した怪物によって拡散される不自然な疫病の噂が広まっている。
                       <Link to="/" className="navbar-item">
                         Home
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/about">
                         About
                       </Link>
@@ -53,7 +55,7 @@ const Footer = class extends React.Component {
                       >
                         Admin
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </section>
               </div>

@@ -87,7 +87,7 @@ const Navbar = class extends React.Component {
                 rel="noopener noreferrer"
               >
                 <span className="icon">
-                  <img src={github} alt="Github" />
+                  <img src={discord} alt="Github" />
                 </span>
               </a>
             </div>
