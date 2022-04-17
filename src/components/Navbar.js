@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
           
             <Link to="/" className="navbar-item" title="Logo">
               {/* <img src={logo} alt="Kaldi" style={{ width: "88px" }} /> */}
-              「ヴィジルスの孤立」ウォーハンマーストア神保町キャンペーン
+              "Vigilus Alone" Campaign 2022
             </Link>
             {/* Hamburger menu */}
             <div
@@ -77,9 +77,9 @@ const Navbar = class extends React.Component {
               <AnchorLink className="navbar-item" to="/#ability">
                 戦域アビリティ
               </AnchorLink>
-              <Link className="navbar-item" to="/blog">
+              <AnchorLink className="navbar-item" to="/#blog">
                 進歩報告
-              </Link>
+              </AnchorLink>
             </div>
             <div className="navbar-end has-text-centered">
               <a

@@ -1,9 +1,11 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
+   
     {gridItems.map((item) => (
       <div key={item.text} className="column is-6">
         <section className="section">
