@@ -7,6 +7,8 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
+import twitter from "../img/social/twitter.svg";
+import discord from "../img/discord-icon.svg";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -22,47 +24,64 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      <div className="column">
+        <div className="column is-10 is-offset-1">
+          <h1 className="title">
+          「ヴィジルスの孤立」ウォーハンマーストア神保町キャンペーン
+          </h1>
+          <h3 className="subtitle">
+           ウォーハンマー40,000のの設定においてヴィジルス城塞惑星は戦略的に重要な場所で、物語の中心的な舞台にもなってきました。その物語の最新話である「ヴィジルスの孤立」を一緒に体験しませんか？
+            <br />途中参加も大歓迎ですので、キャンペーン参加希望の方は気軽に<a
+                href="https://discord.gg/yeKNeRNN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <span className="icon">
+                <img src={discord} />
+              </span>ディスコードに登録する</a>か、<a
+                href="https://twitter.com/maskopism"
+                target="_blank"
+                rel="noopener noreferrer"
+              ><span className="icon">
+                  <img src={twitter} />
+                </span>キャンペーンマスター</a>までご連絡ください！
+          </h3>
+        </div>
+      </div>
+
+      <FullWidthImage img={heroImage} title="キャンペーン参加者" subheading={subheading} id="members" />
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
-                  </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
+                      <h3 className="has-text-weight-semibold is-size-2" id="rules">
                         {heading}
                       </h3>
-                      <p>{description}</p>
+                      {/* <p>{description}</p> */}
                     </div>
                   </div>
                   <Features gridItems={intro.blurbs} />
-                  <div className="columns">
+                  {/* <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
                         See all products
                       </Link>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
+                      進歩報告とバトルレポート
                     </h3>
                     <BlogRoll />
-                    <div className="column is-12 has-text-centered">
+                    {/* <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/blog">
-                        Read more
+                        前の
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -70,6 +89,11 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
+
+      <div className="content has-text-centered has-text-white">
+        <h3 id="ability">戦域アビリティ</h3>
+      </div>
+
     </div>
   );
 };
@@ -138,6 +162,7 @@ export const pageQuery = graphql`
                 gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
               }
             }
+            title
             text
           }
           heading
