@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
@@ -56,8 +56,13 @@ export const IndexPageTemplate = ({
               <div className="column is-12">
                 <div className="content">
                   <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2" id="rules">
+                    <div className="">
+                      <h3 className="has-text-weight-semibold is-size-2" id="rules" style={{
+                          backgroundColor: "rgb(255, 68, 0)",
+                          color: "white",
+                          padding: "0.25rem",
+                          marginTop: "0.5rem",
+                        }}>
                         {heading}
                       </h3>
                       {/* <p>{description}</p> */}
@@ -76,10 +81,13 @@ export const IndexPageTemplate = ({
                           クルセイドは勝ち負けだけではなく、ストーリーやユニットの成長を楽しむゲームです。最強の組み合わせというよりも自分で使ってみたいミニチュアや、「その場にいそうな」 ユニットを編成した方が、より楽しめるゲームになるでしょう。 
                         </p>
                         <p>  
-                          今回のキャンペーンはパワーレベル（PL）で行います。キャンペーン参加者はまず５０PLの戦闘序列表を作り、帝国側か混沌側か決めてください。戦闘序列表とクルセイドカードは必ずディスコードやツイッターで公開して、ゲームに持って行きましょう。 ゲームをするにはまず敵対する同盟のプレイヤーを誘いましょう！キャンペーンマスターがマッチアップすることもあります。基本的に戦闘序列表から２５PL以下（コンバットパトロール）、或いは５０PL以下（インカージョン）のロスターを編成し、対戦相手に渡しましょう。
+                          今回のキャンペーンはパワーレベル（PL）で行います。キャンペーン参加者はまず５０PLの戦闘序列表を作り、帝国側か混沌側か決めてください。戦闘序列表とクルセイドカードは必ずディスコードやツイッターで公開しましょう。
+                        </p>
+                        <p>
+                          ゲームをするにはまず敵対する同盟のプレイヤーを誘いましょう！キャンペーンマスターがマッチアップすることもあります。基本的に<span className="is-underlined">戦闘序列表から２５PL以下（コンバットパトロール）のロスターを編成し、対戦相手に渡しましょう。</span>
                         </p>
                         <p>  
-                          バトル開始時に編成したユニットのクルセイドポイントを比較し、少ない方のプレイヤーに差分の半分を（切り捨て）CPとして与えます。８以上の差は出来るだけ避けましょう。
+                          バトル開始時に編成したロスターのクルセイドポイントを比較し、少ない方のプレイヤーに差分の半分を（切り捨て）CPとして与えます。８以上の差は出来るだけ避けましょう。
                         </p>  
                       </section>
                     </div>
@@ -166,8 +174,13 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div>
                   </div> */}
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2" id="blog">
+                  <div className="column is-7">
+                    <h3 className="has-text-weight-semibold is-size-2" id="blog" style={{
+                          backgroundColor: "rgb(255, 68, 0)",
+                          color: "white",
+                          padding: "0.25rem",
+                          marginTop: "0.5rem",
+                        }}>
                       進歩報告とバトルレポート
                     </h3>
                     更新中
@@ -178,9 +191,10 @@ export const IndexPageTemplate = ({
                       </Link>
                     </div> */}
                   </div>
+
+                  
                 </div>
-              <h3 id="ability" className="has-text-weight-semibold is-size-2">戦域アビリティ</h3>
-              <p>「ヴィジルスの孤立」において、各バトルは戦域を選ぶ必要があります。プレイヤーが合意すれば、以下の戦域アビリティも使用できます。</p>
+              
               </div>
 
             </div>
