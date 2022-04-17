@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
     <div>
         <div className="column is-10 is-offset-1">
           <h1 className="title">
-          「ヴィジルスの孤立」ウォーハンマーストア神保町キャンペーン
+          「ヴィジルスの孤立」ウォーハンマーストア神保町キャンペーンへようこそ
           </h1>
           <h3 className="subtitle">
            ウォーハンマー40,000のの設定においてヴィジルス城塞惑星は戦略的に重要な場所で、物語の中心的な舞台にもなってきました。その物語の最新話である「ヴィジルスの孤立」を一緒に体験しませんか？

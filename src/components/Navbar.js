@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
           
             <Link to="/" className="navbar-item" title="Logo">
               {/* <img src={logo} alt="Kaldi" style={{ width: "88px" }} /> */}
-              "Vigilus Alone" Campaign 2022
+              「ヴィジルスの孤立」キャンペーン
             </Link>
             {/* Hamburger menu */}
             <div
