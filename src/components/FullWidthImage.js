@@ -56,7 +56,7 @@ export default function FullWidthImage(props) {
           />
         )}
         {(title || subheading) && (
-          <div
+          <div className="columns is-multiline" 
             style={{
               // By using the same grid area for both, they are stacked on top of each other
               gridArea: "1/1",
@@ -67,7 +67,7 @@ export default function FullWidthImage(props) {
             }}
           >
 
-
+            <div className="column is-4 is-offset-1">
             {/* Any content here will be centered in the component */}
             {/* is-size-3-mobile is-size-2-tablet is-size-1-widescreen */}
             {title && (
@@ -89,9 +89,6 @@ export default function FullWidthImage(props) {
               <p
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "rgb(255, 68, 0)",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25rem",
@@ -101,7 +98,7 @@ export default function FullWidthImage(props) {
                 {subheading}
               </p>
             )}
-
+            </div>
           </div>
         )}
       </div>
