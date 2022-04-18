@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
+import twitter from "../img/social/twitter.svg";
+import discord from "../img/discord-icon.svg";
 
 export default function FullWidthImage(props) {
   const {
@@ -13,6 +15,9 @@ export default function FullWidthImage(props) {
 
   return (
     <React.Fragment>
+
+      
+
       <div
         className="margin-top-0"
         style={{
@@ -56,7 +61,7 @@ export default function FullWidthImage(props) {
           />
         )}
         {(title || subheading) && (
-          <div className="columns is-multiline" 
+          <div className="columns" 
             style={{
               // By using the same grid area for both, they are stacked on top of each other
               gridArea: "1/1",
@@ -67,12 +72,12 @@ export default function FullWidthImage(props) {
             }}
           >
 
-            <div className="column is-4 is-offset-1">
+            <div className="column is-10 is-offset-1">
             {/* Any content here will be centered in the component */}
             {/* is-size-3-mobile is-size-2-tablet is-size-1-widescreen */}
             {title && (
               <h3
-                className="has-text-weight-bold is-size-2"   
+                className="has-text-weight-bold is-size-2 columns"   
                 style={{
                   boxShadow:
                     "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
@@ -82,7 +87,9 @@ export default function FullWidthImage(props) {
                   padding: "0.25em",
                 }}
               >
-                {title}
+
+                
+              キャンペーン参加者
               </h3>
             )}
             {subheading && (
@@ -95,11 +102,12 @@ export default function FullWidthImage(props) {
                   marginTop: "0.5rem",
                 }}
               >
-                {subheading}
+                更新中
               </p>
             )}
             </div>
           </div>
+
         )}
       </div>
     </React.Fragment>
