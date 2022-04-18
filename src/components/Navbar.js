@@ -75,10 +75,10 @@ const Navbar = class extends React.Component {
                 ハウスルール
               </AnchorLink>
               <AnchorLink className="navbar-item" to="/#ability">
-                戦域アビリティ
+                戦域と戦況
               </AnchorLink>
               <AnchorLink className="navbar-item" to="/#blog">
-                進歩報告
+                進歩報告とバトルレポート
               </AnchorLink>
             </div>
             <div className="navbar-end has-text-centered">

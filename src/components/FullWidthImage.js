@@ -66,10 +66,13 @@ export default function FullWidthImage(props) {
               display: "grid",
             }}
           >
+
+
             {/* Any content here will be centered in the component */}
+            {/* is-size-3-mobile is-size-2-tablet is-size-1-widescreen */}
             {title && (
-              <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+              <h3
+                className="has-text-weight-bold is-size-2"   
                 style={{
                   boxShadow:
                     "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
@@ -80,10 +83,10 @@ export default function FullWidthImage(props) {
                 }}
               >
                 {title}
-              </h1>
+              </h3>
             )}
             {subheading && (
-              <h3
+              <p
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
                   boxShadow:
@@ -96,8 +99,9 @@ export default function FullWidthImage(props) {
                 }}
               >
                 {subheading}
-              </h3>
+              </p>
             )}
+
           </div>
         )}
       </div>

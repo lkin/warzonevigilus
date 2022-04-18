@@ -56,7 +56,6 @@ export const IndexPageTemplate = ({
               <div className="column is-12">
                 <div className="content">
                   <div className="columns">
-                    <div className="">
                       <h3 className="has-text-weight-semibold is-size-2" id="rules" style={{
                           backgroundColor: "rgb(255, 68, 0)",
                           color: "white",
@@ -66,7 +65,6 @@ export const IndexPageTemplate = ({
                         {heading}
                       </h3>
                       {/* <p>{description}</p> */}
-                    </div>
                   </div>
 
                   {/* MANUAL ENTRIES */}
